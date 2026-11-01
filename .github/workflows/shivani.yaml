@@ -12,4 +12,14 @@ jobs:
           cd 
           cat /etc/os-release
           ls -al
-          cat /etc/passwd 
+          cat /etc/passwd
+      - name: mystep2-clone the repo in current directory
+        uses: actions/checkout@v4
+      - name: mystep3-check the source code
+        run: ls -al
+      - name: mystep4-check the docker image
+        run: docker image build -t shivanipanwar/shivaniimage_nov1:t${{ github.run_number }} -f Dockerfile .
+     - name: mystep5-check the docker image 
+       run: docker images 
+     - name: mystep5-login to dockerhub
+       uses: docker/login-action#v3     
