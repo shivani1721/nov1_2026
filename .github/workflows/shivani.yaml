@@ -31,5 +31,6 @@ jobs:
       - name: mystep7-push the docker image 
         run: docker image push shivanipanwar/shivaniimage_nov1:t${{ github.run_number }}   
       - name: mystep8-login to remote prod server
-        run: sshpass -p 'Anil@332211' ssh -o StrictHostKeyChecking=accept-new root@164.68.105.85 'ls -al' 
+        run: sshpass -p 'Anil@332211' ssh -o StrictHostKeyChecking=accept-new root@164.68.105.85 'docker run -dit -p 8080:81 shivanipanwar/shivaniimage_nov1:t${{ github.run_number }}'
+
 
