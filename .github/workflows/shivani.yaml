@@ -27,5 +27,5 @@ jobs:
           username: ${{ secrects.DOCKERHUB_USERNAME }}
           password: ${{ secrets. DOCKERHUB_TOKEN }}
       - name: mystep7-push the docker image 
-       run: docker image push shivanipanwar/shivaniimage_nov1:t${{ github.run_number }}     
+        run: docker image push shivanipanwar/shivaniimage_nov1:t${{ github.run_number }}     
 
