@@ -20,5 +20,5 @@ jobs:
       - name: mystep4-check the docker image
         run: docker image build -t shivanipanwar/shivaniimage_nov1:t${{ github.run_number }} -f Dockerfile .
       - name: mystep5-check the docker image 
-       run: docker images
+        run: docker images
 
