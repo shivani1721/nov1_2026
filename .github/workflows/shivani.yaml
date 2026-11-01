@@ -11,4 +11,5 @@ jobs:
           pwd
           cd 
           cat /etc/os-release
-          ls -al 
+          ls -al
+         cat /etc/passwd 
