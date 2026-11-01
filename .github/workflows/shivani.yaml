@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   myjob1:
-    runs-on: ubutnu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: mystep1
         run: |
