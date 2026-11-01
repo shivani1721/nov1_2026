@@ -3,3 +3,11 @@ name: myworkflow1
 
 jobs:
   myjob1:
+    runs-on: ubutnu-latest
+    steps:
+      - name: mystep1
+        run: |
+          whoami
+          pwd
+          cd 
+          cat /etc/os-release
